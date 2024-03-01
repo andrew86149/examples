@@ -3,7 +3,9 @@ package main
 import (
 	"examples/basic"
 	"examples/begin"
+	"examples/complexn"
 	phonebook2 "examples/phoneBook2"
+	"examples/phoneBook3"
 	"fmt"
 	"os"
 	"strconv"
@@ -23,6 +25,24 @@ func hw() {
 		begin.PhoneBook()
 	case "phonebook2":
 		phonebook2.PhoneBook()
+	case "phonebook3":
+		phoneBook3.PhoneBook()
+	case "csvdata":
+		complexn.CsvData()
+	case "fieldsre":
+		complexn.FieldsRE()
+	case "intre":
+		complexn.IntRE()
+	case "namesurre":
+		complexn.NameSurRE()
+	case "slicestructures":
+		complexn.SliceStructures()
+	case "structures":
+		complexn.Structures()
+	case "formaps":
+		complexn.ForMaps()
+	case "nilmap":
+		complexn.NilMap()
 	case "cryptorand":
 		basic.CryptoRand()
 	case "genpass":
