@@ -3,6 +3,7 @@ package main
 import (
 	"examples/basic"
 	"examples/begin"
+	phonebook2 "examples/phoneBook2"
 	"fmt"
 	"os"
 	"strconv"
@@ -20,6 +21,8 @@ func hw() {
 	switch argument {
 	case "phonebook":
 		begin.PhoneBook()
+	case "phonebook2":
+		phonebook2.PhoneBook()
 	case "cryptorand":
 		basic.CryptoRand()
 	case "genpass":
