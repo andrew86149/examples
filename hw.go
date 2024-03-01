@@ -1,6 +1,7 @@
 package main
 
 import (
+	"examples/basic"
 	"examples/begin"
 	"fmt"
 	"os"
@@ -19,6 +20,48 @@ func hw() {
 	switch argument {
 	case "phonebook":
 		begin.PhoneBook()
+	case "cryptorand":
+		basic.CryptoRand()
+	case "genpass":
+		basic.GenPass()
+	case "randomnumbers":
+		basic.RandomNumbers()
+	case "pointers":
+		basic.Pointers()
+	case "sortslice":
+		basic.SortSlice()
+	case "copyslice":
+		basic.CopySlice()
+	case "slicearrays":
+		basic.SliceArrays()
+	case "byteslices":
+		basic.ByteSlices()
+	case "deleteslice":
+		basic.DeleteSlice()
+	case "partslice":
+		basic.PartSlice()
+	case "caplen":
+		basic.CapLen()
+	case "goslices":
+		basic.GoSlices()
+	case "constants":
+		basic.Constants()
+	case "converttimes":
+		basic.ConvertTimes()
+	case "dates":
+		basic.Dates()
+	case "usestring":
+		basic.UseString()
+	case "municode":
+		basic.Municode()
+	case "intstring":
+		basic.IntString()
+	case "mtext":
+		basic.Mtext()
+	case "numbers":
+		basic.Numbers()
+	case "merror":
+		basic.Merror()
 	case "generics":
 		begin.Generics()
 	case "customloglinenumber":
