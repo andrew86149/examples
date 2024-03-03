@@ -4,8 +4,10 @@ import (
 	"examples/basic"
 	"examples/begin"
 	"examples/complexn"
+	"examples/oop"
 	phonebook2 "examples/phoneBook2"
 	"examples/phoneBook3"
+	phonebook4 "examples/phoneBook4"
 	"fmt"
 	"os"
 	"strconv"
@@ -27,6 +29,34 @@ func hw() {
 		phonebook2.PhoneBook()
 	case "phonebook3":
 		phoneBook3.PhoneBook()
+	case "phonebook4":
+		phonebook4.Phonebook()
+	case "mobj":
+		oop.Mobj()
+	case "msortcsv":
+		oop.Msortcsv()
+	case "msortshapes":
+		oop.MsortShapes()
+	case "mshape2d":
+		oop.Mshape2D()
+	case "merrorint":
+		oop.MerrorInt()
+	case "mmapempty":
+		oop.MmapEmpty()
+	case "massertions":
+		oop.Massertions()
+	case "mtypeswitch":
+		oop.MtypeSwitch()
+	case "mempty":
+		oop.Mempty()
+	case "msort":
+		oop.Msort()
+	case "methods":
+		oop.Methods()
+	case "setvalues":
+		oop.SetValues()
+	case "reflection":
+		oop.Reflection()
 	case "csvdata":
 		complexn.CsvData()
 	case "fieldsre":
