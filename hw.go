@@ -32,6 +32,10 @@ func hw() {
 		phoneBook3.PhoneBook()
 	case "phonebook4":
 		phonebook4.Phonebook()
+	case "mpostgo":
+		fun.MpostGo()
+	case "getschema":
+		fun.Mmain()
 	case "mdefer":
 		fun.Mdefer()
 	case "mvariadic":
