@@ -4,6 +4,7 @@ import (
 	"examples/basic"
 	"examples/begin"
 	"examples/complexn"
+	"examples/fun"
 	"examples/oop"
 	phonebook2 "examples/phoneBook2"
 	"examples/phoneBook3"
@@ -31,6 +32,18 @@ func hw() {
 		phoneBook3.PhoneBook()
 	case "phonebook4":
 		phonebook4.Phonebook()
+	case "mdefer":
+		fun.Mdefer()
+	case "mvariadic":
+		fun.Mvariadic()
+	case "returnfunction":
+		fun.MreturnFunction()
+	case "msorting":
+		fun.Msorting()
+	case "namedreturn":
+		fun.MnamedReturn()
+	case "mfunctions":
+		fun.Mfunctions()
 	case "mobj":
 		oop.Mobj()
 	case "msortcsv":
