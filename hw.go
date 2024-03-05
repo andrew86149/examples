@@ -9,6 +9,7 @@ import (
 	phonebook2 "examples/phoneBook2"
 	"examples/phoneBook3"
 	phonebook4 "examples/phoneBook4"
+	"examples/unix"
 	"fmt"
 	"os"
 	"strconv"
@@ -32,6 +33,40 @@ func hw() {
 		phoneBook3.PhoneBook()
 	case "phonebook4":
 		phonebook4.Phonebook()
+	case "jsonviper":
+		unix.MjsonViper()
+	case "useviper":
+		unix.MuseViper()
+	case "yaml":
+		unix.Myaml()
+	case "json2xml":
+		unix.Mjson2xml()
+	case "xml":
+		unix.Mxml()
+	case "prettyprint":
+		unix.MprettyPrint()
+	case "jsonstreams":
+		unix.MjsonStreams()
+	case "tagsjson":
+		unix.MtagsJSON()
+	case "encodedecode":
+		unix.MencodeDecode()
+	case "writefile":
+		unix.MwriteFile()
+	case "readsize":
+		unix.MreadSize()
+	case "devrandom":
+		unix.MdevRandom()
+	case "bychar":
+		unix.ByCharacter()
+	case "byword":
+		unix.ByWord()
+	case "byline":
+		unix.ByLine()
+	case "iointerface":
+		unix.MioInterface()
+	case "signals":
+		unix.Msignals()
 	case "mpostgo":
 		fun.MpostGo()
 	case "getschema":
