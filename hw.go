@@ -4,12 +4,15 @@ import (
 	"examples/basic"
 	"examples/begin"
 	"examples/complexn"
+	"examples/concurrency"
 	"examples/fun"
 	"examples/oop"
+	"examples/paral"
 	phonebook2 "examples/phoneBook2"
 	"examples/phoneBook3"
 	phonebook4 "examples/phoneBook4"
 	"examples/unix"
+	"examples/webservices"
 	"fmt"
 	"os"
 	"strconv"
@@ -25,6 +28,66 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "wwwserver":
+		webservices.MwebServices()
+	case "freeman":
+		concurrency.Mmain()
+	case "semaphore":
+		paral.Msemaphore()
+	case "keyval":
+		paral.MkeyVal()
+	case "usecontext":
+		paral.MuseContext()
+	case "goclosurecorrect":
+		paral.MgoclosureCorrect()
+	case "goclosure":
+		paral.MgoClosure()
+	case "monitor":
+		paral.Mmonitor()
+	case "atomic":
+		paral.Matomic()
+	case "rwmutex":
+		paral.MrwMutex()
+	case "forgetmutex":
+		paral.MforgetMutex()
+	case "mmutex":
+		paral.Mmutex()
+	case "wpools":
+		paral.MwPools()
+	case "defineorder":
+		paral.MdefineOrder()
+	case "nilchannel":
+		paral.MnilChannel()
+	case "bufchannel":
+		paral.MbufChannel()
+	case "closenil":
+		paral.McloseNil()
+	case "timeout1":
+		paral.Mtimeout1()
+	case "timeout2":
+		paral.Mtimeout2()
+	case "select":
+		paral.Mselect()
+	case "chrace":
+		paral.MchRace()
+	case "channelfunc":
+		paral.MchannelFunc()
+	case "readclosech":
+		paral.MreadCloseCh()
+	case "channels":
+		paral.Mchannels()
+	case "randomfiles":
+		paral.MrandomFiles()
+	case "adddone":
+		paral.MaddDone()
+	case "vargoroutines":
+		paral.Mvargoroutines()
+	case "multiple":
+		paral.Multiple()
+	case "mcreate":
+		paral.Mcreate()
+	case "maxprocs":
+		paral.MaxProcs()
 	case "phonebook":
 		begin.PhoneBook()
 	case "phonebook2":
