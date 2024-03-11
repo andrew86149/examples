@@ -11,6 +11,7 @@ import (
 	phonebook2 "examples/phoneBook2"
 	"examples/phoneBook3"
 	phonebook4 "examples/phoneBook4"
+	phonebook5 "examples/phoneBook5"
 	"examples/unix"
 	"examples/webservices"
 	"fmt"
@@ -28,6 +29,26 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "timeouts":
+		webservices.MtimoutS()
+	case "timeoutc":
+		webservices.MtimeoutC()
+	case "withdeadline":
+		webservices.MwithDeadline()
+	case "getentries":
+		webservices.MgetEntries()
+	case "fileserver":
+		webservices.MfileServer()
+	case "wwwclient":
+		webservices.MwwwClient()
+	case "simpleclient":
+		webservices.MsimpleClient()
+	case "prometheus":
+		webservices.Mprometheus()
+	case "samplepro":
+		webservices.MsamplePro()
+	case "metrics":
+		webservices.Mmetrics()
 	case "wwwserver":
 		webservices.MwebServices()
 	case "freeman":
@@ -96,6 +117,8 @@ func hw() {
 		phoneBook3.PhoneBook()
 	case "phonebook4":
 		phonebook4.Phonebook()
+	case "phonebook5":
+		phonebook5.MPhoneBook()
 	case "jsonviper":
 		unix.MjsonViper()
 	case "useviper":
