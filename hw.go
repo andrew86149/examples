@@ -12,6 +12,7 @@ import (
 	"examples/phoneBook3"
 	phonebook4 "examples/phoneBook4"
 	phonebook5 "examples/phoneBook5"
+	"examples/tcpws"
 	"examples/unix"
 	"examples/webservices"
 	"fmt"
@@ -29,6 +30,28 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "wsc":
+		tcpws.Mwsc()
+	case "ws":
+		tcpws.Mws()
+	case "socketc":
+		tcpws.MsocketC()
+	case "sockets":
+		tcpws.MsocketS()
+	case "conctcp":
+		tcpws.MconcTCP()
+	case "udpc":
+		tcpws.MudpC()
+	case "udps":
+		tcpws.MudpS()
+	case "othertcpserver":
+		tcpws.MtcpSO()
+	case "tcpserver":
+		tcpws.MtcpS()
+	case "othertcpclient":
+		tcpws.MtcpCO()
+	case "tcpclient":
+		tcpws.MtcpC()
 	case "timeouts":
 		webservices.MtimoutS()
 	case "timeoutc":
