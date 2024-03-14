@@ -8,10 +8,12 @@ import (
 	"examples/fun"
 	"examples/oop"
 	"examples/paral"
-	phonebook2 "examples/phoneBook2"
-	"examples/phoneBook3"
-	phonebook4 "examples/phoneBook4"
-	phonebook5 "examples/phoneBook5"
+	"examples/phonebook2"
+	"examples/phonebook3"
+	"examples/phonebook4"
+	"examples/phonebook5"
+	"examples/rest"
+	"examples/restful"
 	"examples/tcpws"
 	"examples/unix"
 	"examples/webservices"
@@ -30,6 +32,14 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "restapi":
+		restful.Mrestapi()
+	case "userestdb":
+		restful.MuseRestdb()
+	case "rclient":
+		rest.Mrclient()
+	case "rserver":
+		rest.Mrserver()
 	case "wsc":
 		tcpws.Mwsc()
 	case "ws":
@@ -137,7 +147,7 @@ func hw() {
 	case "phonebook2":
 		phonebook2.PhoneBook()
 	case "phonebook3":
-		phoneBook3.PhoneBook()
+		phonebook3.PhoneBook()
 	case "phonebook4":
 		phonebook4.Phonebook()
 	case "phonebook5":
