@@ -17,6 +17,7 @@ import (
 	"examples/restful/file"
 	"examples/restful/swagger/serve"
 	"examples/tcpws"
+	"examples/tsts"
 	"examples/unix"
 	"examples/webservices"
 	"fmt"
@@ -34,6 +35,8 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "mtsts":
+		tsts.Mtsts()
 	case "mswagger":
 		serve.Mswagger()
 	case "mbinary":
