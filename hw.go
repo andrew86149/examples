@@ -14,6 +14,8 @@ import (
 	"examples/phonebook5"
 	"examples/rest"
 	"examples/restful"
+	"examples/restful/file"
+	"examples/restful/swagger/serve"
 	"examples/tcpws"
 	"examples/unix"
 	"examples/webservices"
@@ -32,6 +34,10 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "mswagger":
+		serve.Mswagger()
+	case "mbinary":
+		file.Mbinary()
 	case "restapi":
 		restful.Mrestapi()
 	case "userestdb":
