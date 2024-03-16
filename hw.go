@@ -6,12 +6,15 @@ import (
 	"examples/complexn"
 	"examples/concurrency"
 	"examples/fun"
+	"examples/generics"
 	"examples/oop"
 	"examples/paral"
 	"examples/phonebook2"
 	"examples/phonebook3"
 	"examples/phonebook4"
 	"examples/phonebook5"
+	"examples/protoapi/client"
+	"examples/protoapi/server"
 	"examples/rest"
 	"examples/restful"
 	"examples/restful/file"
@@ -35,6 +38,24 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "mreflection":
+		generics.Mreflection()
+	case "minterfaces":
+		generics.Minterfaces()
+	case "numeric":
+		generics.Mnumeric()
+	case "newstructures":
+		generics.Mstructures()
+	case "newdt":
+		generics.MnewDT()
+	case "allowed":
+		generics.Mallowed()
+	case "hw":
+		generics.Mhw()
+	case "gclient":
+		client.Mclient()
+	case "gserver":
+		server.Mserver()
 	case "mtsts":
 		tsts.Mtsts()
 	case "mswagger":
