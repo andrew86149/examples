@@ -1,6 +1,7 @@
 package main
 
 import (
+	"examples/appa"
 	"examples/basic"
 	"examples/begin"
 	"examples/complexn"
@@ -38,6 +39,8 @@ func hw() {
 	}
 	argument := arguments[1]
 	switch argument {
+	case "allocate":
+		appa.Mallocate()
 	case "mreflection":
 		generics.Mreflection()
 	case "minterfaces":
